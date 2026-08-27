@@ -1,0 +1,118 @@
+body {
+    background-color: rgb(249, 222, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    margin: 0;
+}
+
+#calculadora {
+    background-color: aliceblue;
+    width: 380px;       
+    height: 550px;      
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 50px 0px rgb(185, 104, 153);
+    border: 2px solid rgb(172, 170, 170);
+}
+
+#visor {
+    background-color: rgb(250, 152, 211);
+    width: 300px;       
+    height: 150px;      
+    border-radius: 15px;
+    margin: 40px auto 0 auto;
+    border: 2px solid rgb(227, 138, 191);
+    display: flex;
+}
+
+#num{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 40px 40px 40px;
+}
+
+button{
+width: 65px;
+height: 65px;
+margin: 5px;
+font-weight: bolder;
+font-size: 25px;
+color: rgb(255, 255, 255);
+background-color: rgb(250, 152, 211);
+border: 2px solid rgb(227, 138, 191);
+border-radius: 10px;
+cursor: pointer;
+}
+
+button:active{
+    background-color: rgb(246, 110, 192);
+}
+
+#escrito{
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 21px;
+    padding: 15px;
+    align-self: center;
+}
+
+#laco{
+    position: absolute;
+    width: 40%;
+    height: auto;
+    margin-top: 0;
+    margin-left: 0%;
+}
+#lac{
+    position: absolute;
+    width: 15%;
+    height: auto;
+    margin-top: 0;
+    margin-left: 60%;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        min-height: 100dvh; 
+    }
+    #calculadora {
+        width: 75%;         
+        height: 70vh;
+        max-height: 480px;
+        margin-top: 0;
+    }
+    #visor {
+        width: 85%;
+        height: 25vh;
+        max-height: 120px;
+        margin: 25px auto 0 auto; 
+    }
+    #num{
+    margin: 25px 25px 40px 25px;
+    }
+    button{
+        width: 23%;
+        height: 55%;
+        margin: 2px;
+        font-size: 100%;
+    }
+    #laco{
+    position: absolute;
+    width: 40%;
+    height: auto;
+    margin-top: 0;
+    margin-left: 0%;
+    }
+    #lac{
+    position: absolute;
+    width: 50%;
+    height: auto;
+    margin-top: 0;
+    margin-left: 99%;
+    }
+}
